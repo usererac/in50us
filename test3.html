@@ -1,91 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  .col-sm-6{
- 
-  height: 100px;
-  }
-  
-  .container{
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.col-sm-4 {
+	height: 120px;
+}
 
-  }
- 
-  
-  table{
-  margin: 0px;
-  height: 100px;
-  }
-  table tr td{
-  border: 1px solid;
-  }
-  
-  td{
-  align:left;
-  }
-  </style>
+.col-sm-6 {
+	height: 120px;
+}
+
+.col-sm-2 {
+	height: 120px;
+}
+
+table {
+	margin: 0px;
+	height: 100px;
+}
+
+td {
+	padding-left: 10px;
+}
+
+.row {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+		rgba(0, 0, 0, 0.19);
+}
+
+#login-container {
+	padding-left: 50px;
+	visibility: hidden;
+}
+
+#login-signup-container {
+	
+}
+
+.btn {
+	font-size: 18px;
+	background-color: #2e3033;
+}
+
+#fp-anchor {
+	color: #4d8de2;
+}
+</style>
+<script>
+	function changeVisibility() {
+		document.getElementById("login-container").style.visibility = "visible";
+		document.getElementById("init-login-button-div").style.visibility = "hidden";
+	}
+</script>
 </head>
 <body>
 
-<div class="container-fluid">
-   
-     
-  <div class="row">
-    <div class="col-sm-6" style="background-color: #ECE612;">
-     
-    </div>
-    <div class="col-sm-6" style="background-color: pink">
-    
-    
-    <div class="container">
-   <form class="form-inline" action="/action_page.php">
-   <table>
-    <tr>
-    <td>
-     <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-    </div>
-    </td>
-    
-    <td>
-<div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-    </div>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    <div class="signup">
-      <p style="margin: 0px text-align: right"><a href=#signup>Sign Up</a></p>
-      <p style="margin:0px"><a href=#fp>forgot password?</a></p>
-    </div>
-    </td>
-    <td>
-    <div style="float: right">
-    <div class="checkbox">
-      <label><input type="checkbox" name="remember"> Remember me</label>
-    </div>
-    <button type="submit" class="btn btn-default">Login</button>
-    </div>
-    </dvi>
-    </td>
-    </tr>
-    </table>
-    
-    
-  </form>
-</div>
-       
-    </div>
-  </div>
-</div>
-    
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4" style="background-color: #ECE612;"></div>
+			<div class="col-sm-6" style="background-color: #ECE612;">
+				<div id="login-container" class="container">
+					<form class="form-inline" action="/action_page.php">
+						<table>
+							<tr>
+								<td>
+									<div class="form-group">
+										<label for="email">Email:</label>
+									</div>
+
+								</td>
+								<td>
+									<div class="form-group">
+										<label for="pwd">Password:</label>
+									</div>
+
+								</td>
+
+							</tr>
+							<tr>
+								<td>
+									<div class="form-group">
+										<input type="email" class="form-control" id="email"
+											placeholder="Enter email" name="email">
+									</div>
+								</td>
+
+								<td>
+									<div class="form-group">
+										<input type="password" class="form-control" id="pwd"
+											placeholder="Enter password" name="pwd">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="signup">
+										<p style="margin: 0px text-align: right">
+											<a id="fp-anchor" href=#signup>Sign Up</a><br> <a
+												id="fp-anchor" href=#fp>Forgot password?</a>
+										</p>
+									</div>
+								</td>
+								<td>
+									<div style="float: right">
+										<div class="checkbox">
+											<label><input type="checkbox" name="remember">
+												Remember me</label>
+											<button type="submit" class="btn btn-info">Login</button>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+
+					</form>
+
+				</div>
+
+			</div>
+			<div class="col-sm-2" style="background-color: #ECE612;">
+				<div id="login-signup-container">
+					<table>
+						<tr>
+							<td>
+								<div id="init-login-button-div">
+									<button type="submit" class="btn btn-info"
+										onClick="changeVisibility()">Login</button>
+								</div>
+							</td>
+							<td>
+								<div>
+									<button type="button" class="btn btn-info">Sign Up</button>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
 </body>
