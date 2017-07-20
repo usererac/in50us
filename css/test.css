@@ -1,0 +1,41 @@
+#container{
+    margin:0px;
+}
+
+#footer{
+    margin:0px;
+    background-color: #007bb5;
+}
+
+
+footer{
+    margin: 0px;
+    background-color: rgb(46, 60, 84);
+
+    padding-left: 0px;
+    
+}
+body{
+    margin : 0px;
+}
+ul{
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    float: center;
+    padding: 0px;
+
+}
+
+li a{
+    display: block;
+    padding: 0px;
+}
+li a:hover {
+    background-color: #555;
+    color: white;
+}
