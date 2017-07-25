@@ -1,3 +1,18 @@
+
+
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+
 // Set the date we're counting down to
 var countDownDate = new Date("Aug 1, 2017 15:37:25").getTime();
 
@@ -35,4 +50,8 @@ function myFunction() {
     } else {
         x.className = "topnav";
     }
+}
+function changeVisibility() {
+    document.getElementById("login-container").style.visibility = "visible";
+    document.getElementById("init-login-button-div").style.visibility = "hidden";
 }
