@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/test3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container-fluid" style="border: 1px solid red;">
+    <div class="row">
+        <div class="col-sm-4" style="background-color: #ECE612;">
+            <div>
+                <img src="images/in50us_v2.0.png" alt="in50us.com" width="300" height="120">
+            </div>
+        </div>
+        <div class="col-sm-6" style="background-color: #ECE612;">
+            <div id="login-container" class="container">
+                <form id="login-from" class="form-inline" action="/action_page.php">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <label for="pwd">Password:</label>
+                                </div>
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input type="email" class="form-control" id="email"
+                                           placeholder="Enter email" name="email">
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                    <input type="password" class="form-control" id="pwd"
+                                           placeholder="Enter password" name="pwd">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="signup">
+                                    <p style="margin:0px; text-align: right">
+                                        <a class="fp-anchor" href=#signup>Sign Up</a><br>
+                                        <a class="fp-anchor" href=#fp>Forgot password?</a>
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div style="float: right">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="remember">
+                                            Remember me</label>
+                                        <button type="submit" class="btn btn-info">Login</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                </form>
+
+            </div>
+
+        </div>
+        <div class="col-sm-2" style="background-color: #ECE612;">
+            <div id="login-signup-container">
+                <table>
+                    <tr>
+                        <td>
+                            <div id="init-login-button-div1">
+                                <button type="submit" class="btn btn-info"
+                                        onClick="changeVisibility()">Login
+                                </button>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
+                                    Sign Up
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -52,6 +52,6 @@ function myFunction() {
     }
 }
 function changeVisibility() {
-    document.getElementById("login-container").style.visibility = "visible";
+    document.getElementById("login-form1").style.visibility = "visible";
     document.getElementById("init-login-button-div").style.visibility = "hidden";
 }
