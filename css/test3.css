@@ -57,18 +57,15 @@ table {
 
 }
 
-.card {
+.w3-card {
     width: 100%;
-    height: 100px;
+    height: 200px;
     background: linear-gradient(to bottom right, #ccffff 0%, #ffffff 100%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    margin: 10px;
-    padding: 7px;
-
 }
 
-.card:hover {
+.w3-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border: 1px solid;
     border-color: blue;
@@ -106,24 +103,6 @@ h {
     color: #4d8de2;
 }
 
-#footer-menu {
-    width: 100%;
-    height: 300px;
-    background-color: #333;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
-
-#footer-cr-div {
-    border-top: solid;
-    border-top-width: 0.5px;
-    border-top-color: #ECE612;
-    width: 100%;
-    height: 30px;
-    background-color: #333;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 ul {
     width: 25%;
     float: left;
@@ -154,10 +133,3 @@ li a:hover {
     color: #bb0000;
 }
 
-#footer-paragraph {
-    margin: 0px;
-    padding: 8px;
-    text-align: center;
-    color: #ECE612;
-    font-size: 15px;
-}
